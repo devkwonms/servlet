@@ -20,10 +20,14 @@ public class FrontControllerServletV1 extends HttpServlet {
 
     public FrontControllerServletV1() {
         System.out.println("기본생성자 1");
+
         controllerMap.put("/front-controller/v1/members/new-form", new MemberFormControllerV1());
         controllerMap.put("/front-controller/v1/members/save", new MemberSaveControllerV1());
         controllerMap.put("/front-controller/v1/members", new MemberListControllerV1());
+
+        //        System.out.println("controllerMap = " + controllerMap);
         System.out.println("기본생성자 2");
+
     }
 
     @Override
