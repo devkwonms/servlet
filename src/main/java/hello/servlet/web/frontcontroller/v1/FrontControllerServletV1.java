@@ -19,14 +19,14 @@ public class FrontControllerServletV1 extends HttpServlet {
     private Map<String, ControllerV1> controllerMap =  new HashMap<>();
 
     public FrontControllerServletV1() {
-        System.out.println("기본생성자 1");
+        System.out.println("v1기본생성자 1");
 
         controllerMap.put("/front-controller/v1/members/new-form", new MemberFormControllerV1());
         controllerMap.put("/front-controller/v1/members/save", new MemberSaveControllerV1());
         controllerMap.put("/front-controller/v1/members", new MemberListControllerV1());
 
         //        System.out.println("controllerMap = " + controllerMap);
-        System.out.println("기본생성자 2");
+        System.out.println("v1기본생성자 2");
 
     }
 
